@@ -4,5 +4,5 @@ Trabajo grupal del equipo F
 Integrantes:
 - Parque Ñiquen Angel Luis
 - Romero Maravi Anghely Gabriela 
--
+- Aguilar Tunque Yerson Jaime
 -
