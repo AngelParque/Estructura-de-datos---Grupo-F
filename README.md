@@ -5,4 +5,4 @@ Integrantes:
 - Parque Ñiquen Angel Luis
 - Romero Maravi Anghely Gabriela 
 - Aguilar Tunque Yerson Jaime
--
+- Ayala Sulca Wilner
