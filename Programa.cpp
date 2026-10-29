@@ -71,16 +71,41 @@ int main() {
 
         switch (opcion) {
             case 1:
-                cout << "Opcion del gestor de procesos (a-f): ";
+            	cout << "------ GESTOR DE PROCESOS ------\n";
+		        cout << "   a. Crear nuevo proceso\n";
+		        cout << "   b. Eliminar proceso\n";
+		        cout << "   c. Buscar proceso por ID\n";
+		        cout << "   d. Buscar proceso por nombre\n";
+		        cout << "   e. Modificar prioridad de proceso\n";
+		        cout << "   f. Mostrar todos los procesos\n";
+		        cout << "Opcion del gestor de procesos (a-f): ";
                 cin >> subopcion;
 
                 switch (subopcion) {
-                    case 'a': cout << "Crear nuevo proceso\n"; break;
-                    case 'b': cout << "Eliminar proceso\n"; break;
-                    case 'c': cout << "Buscar proceso por ID\n"; break;
-                    case 'd': cout << "Buscar proceso por nombre\n"; break;
-                    case 'e': cout << "Modificar prioridad de proceso\n"; break;
-                    case 'f': cout << "Mostrar todos los procesos\n"; break;
+                    case 'a': 
+						cout << "Crear nuevo proceso\n";
+						crearProceso(); 
+						break;
+                    case 'b': 
+						cout << "Eliminar proceso\n";
+						eliminarProceso(); 
+						break;
+                    case 'c': 
+						cout << "Buscar proceso por ID\n";
+						void buscarProcesoID();
+						break;
+                    case 'd': 
+						cout << "Buscar proceso por nombre\n";
+						void buscarProcesoNombre(); 
+						break;
+                    case 'e': 	
+						cout << "Modificar prioridad de proceso\n";
+						modificarPrioridad();
+						break;
+                    case 'f': 
+						cout << "Mostrar todos los procesos\n";
+						mostrarProcesos(); 
+						break;
                     default: cout << "Opcion no valida\n";
                 }
                 break;
@@ -90,9 +115,18 @@ int main() {
                 cin >> subopcion;
 
                 switch (subopcion) {
-                    case 'a': cout << "Ejecutar siguiente proceso\n"; break;
-                    case 'b': cout << "Terminar proceso actual\n"; break;
-                    case 'c': cout << "Mostrar cola de prioridad\n"; break;
+                    case 'a': 
+						cout << "Ejecutar siguiente proceso\n";
+						siguienteProceso();
+						break;
+                    case 'b': 
+						cout << "Terminar proceso actual\n"; 
+						terminarProcesoActual();
+						break;
+                    case 'c': 
+						cout << "Mostrar cola de prioridad\n"; 
+						mostrarColaPrioridad();
+						break;
                     default: cout << "Opcion no valida\n";
                 }
                 break;
@@ -102,18 +136,26 @@ int main() {
                 cin >> subopcion;
 
                 switch (subopcion) {
-                    case 'a': cout << "Mostrar estado de memoria\n"; break;
-                    case 'b': cout << "Liberar memoria de proceso\n"; break;
+                    case 'a': 
+						cout << "Mostrar estado de memoria\n"; 
+						mostrarEstadoMemoria();
+						break;
+                    case 'b': 
+						cout << "Liberar memoria de proceso\n"; 
+						liberarMemoria();
+						break;
                     default: cout << "Opcion no valida\n";
                 }
                 break;
 
             case 4:
                 cout << "Estado general del sistema\n";
+                estadoSistema();
                 break;
 
             case 5:
                 cout << "Demostracion automatica\n";
+                demostracionAutomatica();
                 break;
 
             case 0:
