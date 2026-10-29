@@ -1,6 +1,48 @@
 #include <iostream>
 using namespace std;
 
+void crearProceso(){
+	
+};
+void eliminarProceso(){
+	
+};
+void buscarProcesoID(){
+	
+};
+void buscarProcesoNombre(){
+	
+};
+void modificarPrioridad(){
+	
+};
+void mostrarProcesos(){
+	
+};
+
+void siguienteProceso(){
+	
+};
+void terminarProcesoActual(){
+	
+};
+void mostrarColaPrioridad(){
+	
+};
+void mostrarEstadoMemoria(){
+	
+};
+void liberarMemoria(){
+	
+};
+void estadoSistema(){
+	
+};
+void demostracionAutomatica(){
+	
+};
+
+
 int main() {
     int opcion;
     char subopcion;
