@@ -50,19 +50,8 @@ int main() {
     do {
         cout << "\n===== SISTEMA DE GESTION DE PROCESOS =====\n";
         cout << "1. GESTOR DE PROCESOS\n";
-        cout << "   a. Crear nuevo proceso\n";
-        cout << "   b. Eliminar proceso\n";
-        cout << "   c. Buscar proceso por ID\n";
-        cout << "   d. Buscar proceso por nombre\n";
-        cout << "   e. Modificar prioridad de proceso\n";
-        cout << "   f. Mostrar todos los procesos\n";
         cout << "2. PLANIFICADOR DE CPU\n";
-        cout << "   a. Ejecutar siguiente proceso\n";
-        cout << "   b. Terminar proceso actual\n";
-        cout << "   c. Mostrar cola de prioridad\n";
         cout << "3. GESTOR DE MEMORIA\n";
-        cout << "   a. Mostrar estado de memoria\n";
-        cout << "   b. Liberar memoria de proceso\n";
         cout << "4. Estado general del sistema\n";
         cout << "5. Demostracion automatica\n";
         cout << "0. Salir\n";
@@ -111,7 +100,11 @@ int main() {
                 break;
 
             case 2:
-                cout << "Opcion del planificador de CPU (a-c): ";
+            	cout << "------- 2. PLANIFICADOR DE CPU -------\n";
+                cout << "   a. Ejecutar siguiente proceso\n";
+		        cout << "   b. Terminar proceso actual\n";
+		        cout << "   c. Mostrar cola de prioridad\n";
+                cout << "Opcion del planificador de CPU (a-c):\n ";
                 cin >> subopcion;
 
                 switch (subopcion) {
@@ -132,7 +125,10 @@ int main() {
                 break;
 
             case 3:
-                cout << "Opcion del gestor de memoria (a-b): ";
+            	cout << "------- 3. GESTOR DE MEMORIA -------\n";
+                cout << "   a. Mostrar estado de memoria\n";
+        		cout << "   b. Liberar memoria de proceso\n";
+                cout << "Opcion del gestor de memoria (a-b): \n";
                 cin >> subopcion;
 
                 switch (subopcion) {
